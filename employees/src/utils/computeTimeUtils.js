@@ -24,6 +24,10 @@ const getDateMilliseconds = (currentDate) => {
     return new Date().valueOf();
   }
 
+  if (currentDate === 'Today') {
+    return new Date().valueOf();
+  }
+
   if (!isNaN(currentDate)) {
     return new Date(Number(currentDate)).valueOf();
   }
