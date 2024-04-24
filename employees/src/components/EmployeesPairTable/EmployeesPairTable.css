@@ -1,0 +1,12 @@
+table {
+  border-spacing: 10px;
+}
+
+table.center {
+  margin: 0 auto;
+  width: 100%;
+}
+
+tr.border-bottom td {
+  border-bottom: 1px solid lightgray;
+}

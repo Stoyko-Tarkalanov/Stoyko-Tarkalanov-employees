@@ -1,0 +1,12 @@
+body {
+  font-family: 'Comfortaa', sans-serif;
+  box-sizing: border-box;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}

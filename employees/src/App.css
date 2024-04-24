@@ -1,0 +1,45 @@
+.employees-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.employees-card {
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #7986cb;
+  padding: 20px;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+}
+
+.upload-button {
+  background-color: white;
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  padding: 8px 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.file-input {
+  display: none;
+}
+
+.info-container {
+  position: absolute;
+  left: 20px;
+  bottom: 11px;
+}
+
+.info-icon img {
+  width: 25px;
+}
