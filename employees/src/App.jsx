@@ -15,10 +15,9 @@ import EmployeesPairTable from './components/EmployeesPairTable';
 
 const App = () => {
   const [selectedFile, setSelectedFile] = useState(null);
+  const [longestWorkingPair, setPairWithLongestWorkTime] = useState(null);
   const [showToast, setShowToast] = useState(false);
   const [toastMessage, setToastMessage] = useState('');
-
-  const [longestWorkingPair, setLongestWorkingPair] = useState(null);
 
   const handleFileChange = async (event) => {
     const file = event.target.files[0];
@@ -28,7 +27,7 @@ const App = () => {
     const projects = convertToProjectStructure(parsedFile);
     const pairs = computeWorkingPairs(projects);
     const pairWorkingTogetherTheMost = determineLongestWorkingPair(pairs);
-    setLongestWorkingPair(pairWorkingTogetherTheMost);
+    setPairWithLongestWorkTime(pairWorkingTogetherTheMost);
 
     let msg = `File "${file.name}" is Uploaded!`;
     if (typeof pairWorkingTogetherTheMost == 'string') {
